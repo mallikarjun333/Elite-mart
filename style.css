@@ -18,7 +18,7 @@
     width: 150px;
 }
 .logo{
-    background-image: url(elite_logo3.png);
+    background-image: url(/images/elite_logo3.png);
     background-size: cover;
     border: 2px;
     border-radius: 5%;
