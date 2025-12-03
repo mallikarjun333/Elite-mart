@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: #01288a;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+}
+.nav_logo{
+    height: 50px;
+    width: 150px;
+}
+.logo{
+    background-image: url(elite_logo3.png);
+    background-size: cover;
+    border: 2px;
+    border-radius: 5%;
+    height: 50px;
+    width: 100%;
+}
+
+.border{
+    border: 2px solid transparent;
+    border-radius: 5%;
+}
+.border:hover{
+    border: 2px solid white;
+    border-radius: 5%;
+}
+/** Box 2 - Delivery **/
+.nav_address{
+    height: 50px;
+    width: 85px;
+    background-color: transparent;
+    display: inline-flex;
+    align-items: center;
+}
+#del{
+    font-size:small;
+    width:100px;
+}
+
+#ind{
+    font-weight: bold;
+    text-align: left;
+}
+/** box 3 - Search bar **/
+.search_and_dd{
+    width: 900px;
+    height: 40px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    border-radius: 5%;
+}
+.search_and_dd:hover{
+    border-color: black;
+    border-style: ridge;
+}
+#schbar{
+    width:100%;
+    border: transparent;
+    font-size: 1rem;
+}
+#schion{
+    width:40px;
+    height: 40px;
+    border:none;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(30, 30, 30);
+border-top-right-radius: 10%;
+border-bottom-right-radius: 10%;
+    background-color: rgb(227, 227, 227);
+}
+.all_dpt{
+    width: 38px;
+    height: 40px;
+    background-color: rgb(234, 234, 234);
+    border: transparent;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    color: rgb(38, 38, 38);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.all_dpt:hover{
+    color:black;
+    background-color: rgb(199, 198, 198);
+}
+/** Box 4 - Sign in **/
+span{
+    font-size: 0.7rem;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.nav_signin:hover{
+    width:105px;
+    height: 50px;
+    border:2px solid white;
+}
+.nav_return{
+    width:65px;
+    height: 50px;
+}
+.nav_return:hover{
+border:2px solid white;
+}
+.nav_sec{
+    width: 110px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/** Box 5 - Cart**/
+.nav_cart i{
+    padding-top: 10px;
+    font-size:30px;
+    font-weight: 0.85rem;
+}
+.nav_cart:hover{
+    border: 2px solid white;
+}
+.nav_cart{
+    width: 75px;
+    height: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-top: 3px;
+}
+/** panel **/
+
+.panel{
+    height: 40px;
+    background-color: #f58300a5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-ops{
+    width:80%;
+display: flex;
+font-size: 0.90rem ;
+}
+.panel-ops p{
+    margin-left: 10px;
+}
+
+.panel-blafri{
+font-size: 0.90rem ;
+font-weight: 700;
+}
+.panel-all{
+    width:50px;
+    font-weight: 600;
+    align-items: flex-start;
+}
+
+/** hero section **/
+.hero-section{
+    height: 400px;
+background-image: url(elite_hero.png) ;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+.hero-msg{
+    height: 40px;
+    width:80%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    position: relative;
+    margin-bottom: 25px;
+
+}
+
+.hero-msg a{
+    color: #007185;
+}
+
+/** Shop Section**/
+
+.shop-sec{
+    height: 900px;
+    display: flex;
+    justify-content: space-evenly;
+   flex-wrap: wrap;
+    background-color: #e3e6e6;
+}
+.box{
+    height: 375px;
+    width: 305px;
+    margin-top: 15px;
+    border: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ 
+    background-color: white;
+    
+}
+.box-content{
+display: flex;
+padding-top: 10px;
+    flex-direction: column;
+    
+}
+.box h3{
+    padding-left:17px;
+}
+
+.box-img{
+    height: 300px;
+    width:86%;
+    margin-top: 10px;
+    background-size: cover;
+    margin-left: 20px ;
+}
+.box-content p{
+    font-size: small;
+    color: #2162a1;
+   padding-left: 18px;
+   padding-top: 10px;
+}
+
+/** Footer Section**/
+
+.foot_panel1 {
+width:100%;
+height:40px;
+color:white;
+font-size: 0.85rem;
+background-color: #37475a;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.foot_panel1:hover{
+    background-color: #4d617a;
+}
+
+.foot_panel2{
+    width:100%;
+    height: 385px;
+    color: #e3e6e6;
+    background-color: #021d3d;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot_panel2 p{
+    font-weight: 700;
+}
+
+ul a{
+    display: block;
+    margin-top: 15px;
+    font-size: 0.85rem;
+}
+
+.foot_panel3{
+height:80px;
+color:white;
+font-size: 0.85rem;
+border-top: 0.3px solid white;
+background-color: #232f3e;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.foot_logo{
+background-image: url(elite_logo3.png);
+background-size: cover;
+border-radius: 5%;
+height: 50px;
+width: 150px;
+}
+
+.conditons{
+    height:30px;
+    width: 100%;
+color:white;
+font-size: 0.85rem;
+background-color: #0f1111;
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+}
+.copyright{
+ height:20px;
+width: 100%;
+color:white;
+font-size: 0.85rem;
+background-color: #0f1111;
+display: flex;
+justify-content:center;
+align-items: center;
+}
