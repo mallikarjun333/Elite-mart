@@ -285,7 +285,7 @@ align-items: center;
 }
 
 .foot_logo{
-background-image: url(elite_logo3.png);
+background-image: url(/images/elite_logo3.png);
 background-size: cover;
 border-radius: 5%;
 height: 50px;
