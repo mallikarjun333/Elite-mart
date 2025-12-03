@@ -18,7 +18,7 @@
     width: 150px;
 }
 .logo{
-    background-image: url('images/elite_logo3.png');
+    background-image: url("./images/elite_logo3.png");
     background-size: cover;
     border: 2px;
     border-radius: 5%;
@@ -168,7 +168,7 @@ font-weight: 700;
 /** hero section **/
 .hero-section{
     height: 400px;
-background-image: url('images/elite_hero.png') ;
+background-image: url("./images/elite_hero.png") ;
 background-size: cover;
 display: flex;
 justify-content: center;
@@ -285,7 +285,7 @@ align-items: center;
 }
 
 .foot_logo{
-background-image: url('images/elite_logo3.png');
+background-image: url("./images/elite_logo3.png");
 background-size: cover;
 border-radius: 5%;
 height: 50px;
