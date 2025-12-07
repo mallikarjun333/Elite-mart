@@ -185,7 +185,6 @@ align-items: flex-end;
     font-size: 0.85rem;
     position: relative;
     margin-bottom: 25px;
-
 }
 
 .hero-msg a{
@@ -311,4 +310,18 @@ background-color: #0f1111;
 display: flex;
 justify-content:center;
 align-items: center;
+}
+
+@media(min-width: 300px) and (max-width: 1200px){
+    .hero-msg{
+        font-size: 0.7rem;
+    }
+
+    .shop-sec{
+        height: 4500px;
+    }
+
+    .navbar{
+    width : 100%;
+}
 }
