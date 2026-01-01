@@ -6,6 +6,7 @@
      <title>EliteMart</title>
      <link rel="icon" type="image" href="images/elite_fevicon1.png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body id="top">
@@ -74,16 +75,50 @@
                     </div>
             </div>
      <div class="panel">
-            <div class="panel-all">
-               <a href="#"> <i class="fa-solid fa-bars"></i>All</a>
+        <div class="panel-all">
+            <button class="hamburger" onclick="toggleMenu()"> <i class="fa-solid fa-bars"></i> All</button>
+            <div id="overlay" onclick="closeMenu()"></div>
+        </div>
+            <nav id="sideMenu">
+                <div id="menusignin">
+                    <a href="login.html">Hello, sign in</a>   
+                </div>
+                <div class="baroptions">
+            <h3>Digital Content & Devices </h3>
+                <p>Prime Video</p>
+                <p>Elitemart Music</p>
+                <p>Kindle E-readers & Books</p>
+                <p>Elitemart Appstore</p>
+                <hr>
+                <h3>Shop by Department</h3>
+               <p>Electronics</p>
+               <p> Computers</p>
+               <p> Smart Home</p>
+               <p> Arts & Crafts</p>
+               <p> See all</p>
+               <hr>
+                <h3>Programs & Features</h3>
+                <p>Gift Cards</p>
+               <p>Shop By Interest</p>
+                <p>Elitemart Live</p>
+                <p>International Shopping</p>
+                <p>See all</p>
+                <hr>
+               <h3>Help & Settings</h3>
+               <p> Your Account</p>
+                <p>English</p>
+               <p> United States</p>
+                <p>Customer Service</p>
+                <p>Sign in</p>
             </div>
+        </nav>          
             <div class="panel-ops">
-                <a href="#">Today's Deals</a>
-                <a href="#">Prime Video</a>
-                <a href="#">Registry</a>
-                <a href="#">Gift Cards</a>
-                <a href="#">Customer Service</a>
-                <a href="#">Sell</a>
+                <a href="#">Today's Deals</p>
+                <a href="#">Prime Video</p>
+                <a href="#">Registry</p>
+                <a href="#">Gift Cards</p>
+                <a href="#">Customer Service</p>
+                <a href="#">Sell</p>
             </div>
             <!-- <div class="panel-blafri">
                 <p>Shop Black Friday deals</p>
@@ -169,7 +204,6 @@
                 <a href="#">EliteMart Devices</a>
                 <a href="#">EliteMart Science </a>
             </ul>
-        
          <ul>
                  <p><b>Make Money with Us</b></p>
                     <a href="#">Sell products on EliteMart</a>
@@ -216,4 +250,3 @@
     </footer>
 </body>
 </html>
-
