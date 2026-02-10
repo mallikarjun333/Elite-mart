@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body id="top">
-    <header>
+    <header class="header">
         <div class="navbar">
             <!-- Box1 - Logo -->
             <div class="nav_logo border">
@@ -85,7 +85,7 @@
                 </div>
                 <div class="baroptions">
             <h3>Digital Content & Devices </h3>
-                <p>Prime Video</p>
+                <p>Elitemart Video</p>
                 <p>Elitemart Music</p>
                 <p>Kindle E-readers & Books</p>
                 <p>Elitemart Appstore</p>
@@ -109,17 +109,18 @@
                 <p>English</p>
                <p> United States</p>
                 <p>Customer Service</p>
-                <p>Sign in</p>
+                <a href="login.html">Sign in</a>
             </div>
         </nav>          
             <div class="panel-ops">
-                <a href="#">Today's Deals</p>
-                <a href="#">Prime Video</p>
-                <a href="#">Registry</p>
-                <a href="#">Gift Cards</p>
-                <a href="#">Customer Service</p>
-                <a href="#">Sell</p>
+                <a href="#">Today's Deals</a>
+                <a href="#">Prime Video</a>
+                <a href="#">Registry</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Sell</a>
             </div>
+            
             <!-- <div class="panel-blafri">
                 <p>Shop Black Friday deals</p>
             </div> -->
@@ -127,8 +128,23 @@
     </header>
 <!-- Hero Section -->
     <div class="hero-section">
-        <div class="hero-msg">
-            <p>You are on elitemart.com. You can also shop on EliteMart India for millions of products with fast local delivery. <a href="#">Click here to go to elitemart.in</a></p>
+         <button class="arrow left" onclick="prevSlide()">❮</button>
+           <div class="hero-track-container">
+    <div class="hero-track">
+        <img class="hero image" src="/images/elite_hero.png">
+        <img class="hero image" src="/images/hero image 2.jpg">
+        <img class="hero image" src="/images/hero im 3.jpg">
+        <img class="hero image" src="/images/hero im 4.jpg">
+        <img class="hero image" src="/images/hero im 5.jpg">
+   <div class="hero-msg"> 
+           <p>
+            You are on elitemart.com. You can also shop on EliteMart India for millions of products with fast local delivery.
+            <a href="#">Click here to go to elitemart.in</a> 
+             </p>
+        </div>
+           </div>
+            <button class="arrow right" onclick="nextSlide()">❯</button>
+           
         </div>
     </div>
     <!-- Shop Section -->

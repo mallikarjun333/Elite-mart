@@ -1,35 +1,48 @@
 *{
     margin: 0;
+    padding:0;
     font-family: Arial;
     border: border-box;
 }
+
 body{
+    margin:0;
+    padding:0;
     display: flex;
     flex-direction: column;
+}
+.page-wrapper {
+  max-width: 1520px;
+  min-width: 1200px;
+  margin: 0 auto;
 }
 hr{
   border-top: 1px solid #e0e0e0;
 }
+.header{
+    position:relative;
+}
 .navbar{
     max-height: 60px;
     height: 100%;
+    width: 1500px;
     width: 100%;
     background-color: #01288a;
     color: white;
     display: flex;
+   
     justify-content: space-evenly;
-    position: fixed;
-    z-index: 1;
+    
 }
 .nav_logo{
     max-height: 50px;
     height: 100%;
-    max-width: 150px;
+    max-width: 120px;
     width: 100%;
 }
 .logo{
     background-image: url("./images/elite_logo3.png");
-    background-size: cover;
+    background-size: contain;
     border: 2px;
     border-radius: 5%;
     height: 50px;
@@ -56,8 +69,7 @@ hr{
     font-size:small;
     max-width:100px;
     width: 100%;
-}
-
+}       
 #ind{
     font-weight: bold;
     text-align: left;
@@ -68,16 +80,15 @@ hr{
     width: 100%;
     height: 40px;
     display: flex;
-    margin-top: 10px;
     justify-content: space-around;
     border-radius: 5%;
 }
-.search_and_dd:hover{
+.search_and_dd:active{
     border-color: black;
     border-style: ridge;
 }
 #schbar{
-    max-width: 800px;
+    max-width: 900px;
     width:100%;
     border: transparent;
     font-size: 1rem;
@@ -88,6 +99,7 @@ hr{
     height: 40px;
     border:none;
     font-size: 1.4rem;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,6 +128,7 @@ span{
     font-size: 0.7rem;
     padding-top: 10px;
     display: flex;
+    padding: 0px 10px 0px 10px;
     align-items: center;
 }
 .nav_signin a{
@@ -136,26 +149,24 @@ border:2px solid white;
 }
 .nav_sec{
     width: 110px;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 700;
 }
 
 /** Box 5 - Cart**/
 .nav_cart i{
-    padding-top: 10px;
-    font-size:30px;
+    font-size:20px;
     font-weight: 0.85rem;
 }
 .nav_cart:hover{
-    border: 2px solid white;
+    border: 1px solid white;
 }
 .nav_cart{
-    max-width: 75px;
+    max-width: 60px;
     width: 100%;
-    height: 50px;
+    height: 40px;
     font-size: 0.85rem;
     font-weight: 700;
-    margin-top: 3px;
 }
 /** panel **/
 
@@ -163,11 +174,10 @@ border:2px solid white;
     height: 40px;
     width: 100%;
     background-color: #f58300;
-    margin-top: 60px;
+   
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    position: fixed;
     z-index: 1;
 }
 .panel-ops{
@@ -221,23 +231,32 @@ font-weight: 700;
 
 /* Side menu */
 #sideMenu {
-  position: fixed;
-  top: 0;
-  left: 0;  
+position: fixed;
+top: 0;
+left: 0;  
 transform: translateX(-100%);
-  transition: transform 0.3s ease;
-  width: 350px;
-  background: #ffffed;
-    scroll-behavior: smooth;
-  height: 100vh;          /* FULL viewport height */
-  overflow-y: auto;      /* ENABLE vertical scroll */
-  overflow-x: hidden; 
+transition: transform 0.3s ease;
+width: 350px;
+background: #ffffed;
+scroll-behavior: smooth;
+height: 98vh;          
+overflow-y: auto;    
+overflow-x: hidden; 
+z-index: 35;
 }
 #sideMenu.open {
  transform: translateX(0);            /* visible */
 }
 
 #sideMenu p {
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 0.85rem;
+}
+#sideMenu a {
   display: block;
   color: rgb(0, 0, 0);
   padding: 10px;
@@ -267,8 +286,8 @@ transform: translateX(-100%);
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
-
   opacity: 0;
+  z-index: 3;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
@@ -278,7 +297,6 @@ transform: translateX(-100%);
   top: 0;
   left: 0;
   transform: translateX(-100%);
-
 }
 
 #overlay.open {
@@ -288,34 +306,123 @@ transform: translateX(-100%);
 
 /** hero section **/
 .hero-section{
-    height: 400px;
+    position: relative;
+    height: 500px;
     max-width: 1600px;
     width: 100%;
     align-self: center;
-background-image: url("./images/elite_hero.png") ;
+    align-self: center;
 background-size: cover;
-display: flex;
 justify-content: center;
 align-items: flex-end;
 }
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-track-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.hero-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+
+.dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  z-index: 10;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+.dot.active {
+  background: white;
+}
+
 .hero-msg{
-    max-height: 40px;
-    height: 100%;
+    position: absolute;
+    min-height: 40px;
     max-width:1000px;
     width:100%;
     background-color: white;
     display: flex;
     align-items: center;
+    text-decoration: none;
     justify-content: center;
     font-size: 0.85em;
     position: relative;
     margin-bottom: 25px;
 }
 
+.hero-msg p{
+    color: #000000;
+    text-decoration: none;
+  
+}
 .hero-msg a{
     color: #007185;
+    text-decoration:underline;
 }
 
+.hero image{
+     height: 500px;
+    max-width: 1600px;
+    width: 100%;
+    
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
 /** Shop Section**/
 
 .shop-sec{
@@ -439,7 +546,7 @@ align-items: center;
 }
 .copyright{
  height:20px;
-width: 100%;
+ max-width: 1500px;
 color:white;
 font-size: 0.85rem;
 background-color: #0f1111;

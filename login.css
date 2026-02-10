@@ -58,6 +58,7 @@ font-size: 0.85rem;
 .loginbtn{
     height: 40px;
     width: 350px;
+    cursor: pointer;
     background-color: rgb(255, 213, 0);
     border: none;
     border-radius: 20px;
